@@ -1,0 +1,246 @@
+# ============================================================
+#  daily-ope-brief 配置（加品牌 / 改关键词只动这里）
+#  产品：发电机 / 通用汽油发动机 / 割草机器人 / 水泵 / 微耕机 / 草坪车
+#  市场：全球，重点北美 + 欧洲
+# ============================================================
+
+lookback_days: 3          # 关税/排放/新闻默认回看天数
+
+# ---------------- 关税 + 排放（Federal Register API）----------------
+federal_register:
+  # 关税：USTR / BIS(232) / CBP / ITC
+  tariff_agencies:
+    - trade-representative-office-of-united-states
+    - industry-and-security-bureau
+    - u-s-customs-and-border-protection
+    - international-trade-commission
+  tariff_types: [RULE, PRORULE, NOTICE, PRESDOCU]
+  tariff_keywords:        # 政策大项 + 本品类相关商品（避免把钯金/火柴等无关 ITC 裁定也收进来）
+    - tariff
+    - section 301
+    - section 232
+    - safeguard
+    - steel
+    - aluminum
+    - air compressor
+    - engine
+    - generator
+    - lawn mower
+    - outdoor power
+    - water pump
+    - gasoline
+    - import duty
+  tariff_agency_match:    # 预公示按机构名匹配（小写子串）
+    - trade representative
+    - industry and security
+    - customs
+    - international trade commission
+
+  # 排放：EPA（关键词收敛到发动机相关，避开无关空气/水规）
+  emission_agencies:
+    - environmental-protection-agency
+  emission_types: [RULE, PRORULE, NOTICE]
+  emission_keywords:      # 只留非道路 / 小型发动机术语，排除石油天然气 / 轮胎等固定源 NESHAP
+    - nonroad
+    - non-road
+    - off-road
+    - small off-road
+    - spark-ignition
+    - spark ignition
+    - small engine
+    - small si
+  emission_agency_match:
+    - environmental protection
+
+# ---------------- CPSC 召回 ----------------
+cpsc:
+  lookback_days: 7
+  keywords:
+    - generator
+    - lawn mower
+    - mower
+    - water pump
+    - tiller
+    - cultivator
+    - lawn tractor
+    - garden tractor
+    - robotic mower
+    - robot mower
+    - pressure washer
+    - engine
+
+# ---------------- 灾害天气 ----------------
+weather:
+  event_keywords:
+    - hurricane
+    - tropical storm
+    - tropical depression
+    - storm surge
+    - flood
+    - flash flood
+    - tornado
+    - severe thunderstorm
+    - winter storm
+    - ice storm
+    - blizzard
+    - high wind
+
+# ---------------- 大公司动向 + 新产品（Google News RSS）----------------
+news:
+  per_query: 12
+  company_queries:
+    - '(Generac OR "Briggs Stratton" OR "Champion Power" OR Westinghouse OR DuroMax OR Firman) (generator OR "power equipment") when:2d'
+    - '("Honda Power" OR "Honda generator" OR "Honda engines" OR Kohler OR Kawasaki) (generator OR engine OR "lawn") when:2d'
+    - '(Husqvarna OR Stihl OR Toro OR "John Deere" OR "Cub Cadet" OR Ariens OR Kubota) (mower OR "outdoor power" OR "lawn") when:2d'
+    - '(Worx OR "Segway Navimow" OR Navimow OR Mammotion OR Ecovacs OR EcoFlow OR Dreame OR Sunseeker) ("robot mower" OR "robotic mower" OR "lawn mower") when:2d'
+    - '("Wacker Neuson" OR Multiquip OR Grundfos OR Xylem OR Pentair) ("water pump" OR "outdoor power") when:2d'
+  product_queries:
+    - '("robot lawn mower" OR "robotic mower" OR "portable generator" OR "inverter generator" OR "pressure washer" OR "lawn tractor" OR "zero turn") (launch OR unveils OR introduces OR "new model" OR "now available") when:3d'
+    - '("outdoor power equipment" OR "lawn and garden equipment") ("new product" OR launch OR unveils) when:3d'
+  # 白名单：标题须含至少一个（品牌 / 品类词）；只对 Google News 生效
+  require_any:
+    - generator
+    - generators
+    - small engine
+    - lawn mower
+    - robot mower
+    - robotic mower
+    - lawn tractor
+    - riding mower
+    - zero turn
+    - water pump
+    - pressure washer
+    - tiller
+    - cultivator
+    - outdoor power
+    - lawn and garden
+    - snow blower
+    - leaf blower
+    - string trimmer
+    - chainsaw
+    - opei
+    - equip exposition
+    - generac
+    - husqvarna
+    - briggs
+    - kohler
+    - stihl
+    - toro
+    - john deere
+    - cub cadet
+    - ariens
+    - kubota
+    - worx
+    - navimow
+    - mammotion
+    - ecovacs
+    - ecoflow
+    - segway
+    - sunseeker
+    - wacker neuson
+    - multiquip
+    - grundfos
+    - xylem
+    - pentair
+    - westinghouse
+    - duromax
+    - firman
+    - greenworks
+  # 黑名单：标题含任一即丢（赛车 / 量子 / 航天 / 备件电商 / 无关时政）
+  exclude_any:
+    - f1
+    - formula 1
+    - indycar
+    - indy car
+    - aston martin
+    - motorcycle
+    - superbike
+    - motogp
+    - aerospace
+    - aero engine
+    - quantum
+    - random number
+    - music generator
+    - ai music
+    - image generator
+    - text generator
+    - crypto
+    - bitcoin
+    - gunmen
+    - killed
+    - soccer
+    - athletics director
+    - carburetor
+    - ignition coil
+    - spark plug
+    - air filter
+    - replacement for
+    - caster wheel
+    - fits model
+    - part #
+    - for sale
+    - if you invested
+  # 来源域名黑名单：备件 / 拍卖 / SEO 垃圾站（按发布方名称子串匹配）
+  exclude_sources:
+    - retidigiustizia
+    - santo andré
+    - santo andre
+    - bonepos
+    - indexbox
+  media_feeds:            # 尽力抓，404 / 无 RSS 自动跳过
+    - name: Power Equipment Trade
+      url: https://powerequipmenttrade.com/feed/
+      limit: 6
+    - name: Total Landscape Care
+      url: https://www.totallandscapecare.com/rss/all.xml
+      limit: 6
+
+# ---------------- 用户评论风向：YouTube ----------------
+youtube:
+  # api_key 留空 —— 正式跑用环境变量 YOUTUBE_API_KEY（GitHub Actions Secrets）
+  api_key: ""
+  lookback_days: 10
+  max_results: 6
+  queries:
+    - robot lawn mower review
+    - portable generator review
+    - inverter generator review
+    - water pump review
+    - lawn tractor review
+    - rototiller cultivator review
+
+# ---------------- 用户评论风向：Reddit RSS ----------------
+reddit:
+  user_agent: "daily-ope-brief/0.1 (industry digest; contact iris)"
+  per_sub: 5
+  delay: 2
+  # 认证 feed（首页或自定义 multireddit 的 .rss?feed= 链接）经环境变量 REDDIT_FEED_URL 传入；
+  # 因首页含非通机内容，按下列关键词过滤。若改用纯通机 multireddit，可把本列表清空。
+  feed_keywords:
+    - generator
+    - mower
+    - lawn
+    - pump
+    - tiller
+    - cultivator
+    - engine
+    - tractor
+    - honda
+    - generac
+    - husqvarna
+    - ecoflow
+    - inverter
+  subreddits:
+    - generator
+    - smallengines
+    - robotlawnmowers
+    - AutomowerOG
+    - lawncare
+    - landscaping
+    - preppers
+    - RVliving
+    - Tractors
+  search_queries:
+    - generator recall
+    - lawn mower recall
+    - robot mower problem
