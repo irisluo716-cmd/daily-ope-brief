@@ -254,12 +254,12 @@ synthesis:
   base_url: https://api.minimaxi.com/v1   # 国内版（minimaxi）；国际账号改 https://api.minimax.io/v1
   site_url: ""              # Cloudflare Pages 站点链接（飞书卡片的"查看完整简报"按钮）；也可用环境变量 SITE_URL
   models:
-    # MiniMax-M 系列：M2 / M2.1 / M2.5 / M2.7（默认 M2）。请按你的账号可用模型确认/调整。
+    # MiniMax-M 系列：M2 / M2.1 / M2.5 / M2.7 / M3。已验证 key 可用 M2 / M2.5 / M2.7 / M3。
     generator:
-      model: MiniMax-M2.5
+      model: MiniMax-M2.7
       max_tokens: 16000
       temperature: 0.6
     judge:
-      model: MiniMax-M2
+      model: MiniMax-M2.5
       max_tokens: 8000
       temperature: 0.2

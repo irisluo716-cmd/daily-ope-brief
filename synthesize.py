@@ -200,8 +200,8 @@ def main():
         d.setdefault("model", default_model)
         return d
 
-    gen_cfg = role_cfg("generator", "MiniMax-M2.5")
-    judge_cfg = role_cfg("judge", "MiniMax-M2")
+    gen_cfg = role_cfg("generator", "MiniMax-M2.7")
+    judge_cfg = role_cfg("judge", "MiniMax-M2.5")
 
     # 第 1 次生成
     g_sys, g_user = gen_prompt(today, cutoff, raw.get("items", []))
