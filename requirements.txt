@@ -1,1 +1,2 @@
 PyYAML>=5.4
+anthropic>=0.49

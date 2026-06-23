@@ -244,3 +244,19 @@ reddit:
     - generator recall
     - lawn mower recall
     - robot mower problem
+
+# ---------------- 成稿合成 + AI 评审（synthesize.py）----------------
+synthesis:
+  new_within_days: 5        # 发布日期早于「今天 - 这个天数」的条目，AI 须当旧闻剔除
+  max_retries: 3            # 评审 REJECT 后最多重写次数（防死循环）
+  models:
+    # 默认全用 Opus 4.8（最稳）。想省成本可把 generator 改 claude-sonnet-4-6、
+    # judge 改 claude-haiku-4-5（注意：Haiku 不支持 adaptive thinking，需把 thinking 设 false）
+    generator:
+      model: claude-opus-4-8
+      max_tokens: 16000
+      thinking: true
+    judge:
+      model: claude-opus-4-8
+      max_tokens: 8000
+      thinking: true
