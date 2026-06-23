@@ -17,6 +17,7 @@ import urllib.error
 
 import yaml
 import render
+import notify
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW_DIR = os.path.join(HERE, "briefs", "raw")
@@ -33,7 +34,7 @@ def call_model(role_cfg, system, user):
     api_key = os.environ.get(key_env, "")
     if not api_key:
         raise RuntimeError("缺少 MiniMax API key（环境变量 %s）" % key_env)
-    url = role_cfg.get("base_url", "https://api.minimax.io/v1").rstrip("/") + "/chat/completions"
+    url = role_cfg.get("base_url", "https://api.minimaxi.com/v1").rstrip("/") + "/chat/completions"
     body = {
         "model": role_cfg.get("model", "MiniMax-M2"),
         "messages": [
@@ -58,7 +59,10 @@ def call_model(role_cfg, system, user):
     choices = resp.get("choices") or []
     if not choices:
         raise RuntimeError("MiniMax 无 choices：%s" % str(resp)[:300])
-    return (choices[0].get("message") or {}).get("content", "") or ""
+    content = (choices[0].get("message") or {}).get("content", "") or ""
+    # MiniMax M 系列是推理模型，content 里会带 <think>…</think>，剥掉只留正文
+    content = re.sub(r"(?s)<think>.*?</think>\s*", "", content).strip()
+    return content
 
 
 def _parse_json(text):
@@ -175,6 +179,7 @@ def rebuild_index():
 def main():
     cfg = yaml.safe_load(open(os.path.join(HERE, "sources.yaml"), encoding="utf-8"))
     sc = cfg.get("synthesis", {})
+    site_url = os.environ.get("SITE_URL", sc.get("site_url", ""))
     today = datetime.date.today().isoformat()
     new_within = int(sc.get("new_within_days", 5))
     cutoff = (datetime.date.today() - datetime.timedelta(days=new_within)).isoformat()
@@ -186,7 +191,7 @@ def main():
         return 0
     raw = json.load(open(raw_path, encoding="utf-8"))
 
-    common = {"base_url": sc.get("base_url", "https://api.minimax.io/v1"),
+    common = {"base_url": sc.get("base_url", "https://api.minimaxi.com/v1"),
               "api_key_env": sc.get("api_key_env", "MINIMAX_API_KEY")}
 
     def role_cfg(name, default_model):
@@ -232,6 +237,8 @@ def main():
         with open(marker, "w", encoding="utf-8") as f:
             f.write("AI 评审 %d 次未通过，未发布成稿。\n最后意见：\n- %s\n" % (max_retries, "\n- ".join(last_issues)))
         print("⚠️ %d 次评审均未通过，未发布成稿（原始素材已保留）。" % max_retries)
+        notify.notify_failure("AI 评审 %d 次未通过，未发布今日成稿。最后意见：%s"
+                              % (max_retries, "；".join(last_issues)[:400]))
         return 0
 
     # PASS → 渲染发布
@@ -243,8 +250,16 @@ def main():
     html = render.render(brief)
     path = write_archive(today, html)
     print("已发布成稿：%s（+ latest.html + index.html）" % path)
+    notify.notify_success(brief, site_url)
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        rc = main()
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        notify.notify_failure("synthesize 运行异常：%r" % e)
+        sys.exit(1)
+    sys.exit(rc)

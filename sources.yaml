@@ -251,7 +251,8 @@ synthesis:
   new_within_days: 5        # 发布日期早于「今天 - 这个天数」的条目，AI 须当旧闻剔除
   max_retries: 3            # 评审 REJECT 后最多重写次数（防死循环）
   api_key_env: MINIMAX_API_KEY
-  base_url: https://api.minimax.io/v1   # 国际版；若用国内账号改成国内域名
+  base_url: https://api.minimaxi.com/v1   # 国内版（minimaxi）；国际账号改 https://api.minimax.io/v1
+  site_url: ""              # Cloudflare Pages 站点链接（飞书卡片的"查看完整简报"按钮）；也可用环境变量 SITE_URL
   models:
     # MiniMax-M 系列：M2 / M2.1 / M2.5 / M2.7（默认 M2）。请按你的账号可用模型确认/调整。
     generator:
