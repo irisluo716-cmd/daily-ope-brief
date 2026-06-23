@@ -43,6 +43,19 @@ python collect.py
 **需要配置的 Secret**：仓库 → Settings → Secrets and variables → Actions → New repository secret
 - `YOUTUBE_API_KEY`　= 你的 YouTube Data API key
 - `REDDIT_FEED_URL`（可选）= 你的 Reddit 认证 RSS feed 链接（形如 `https://www.reddit.com/.rss?feed=TOKEN&user=NAME`，或自定义 multireddit 的 `.rss?feed=` 链接）。数据中心 IP 下公开 `.json` 会 403，认证 `.rss` 可正常返回；建议建一个只含通机版块的自定义 feed，覆盖最干净。
+- `ANTHROPIC_API_KEY` = Claude API key（用于 `synthesize.py` 的成稿合成 + AI 评审）。
+
+## 成稿合成 + AI 评审（synthesize.py）
+
+`collect.py` 只产**原始素材**；`synthesize.py` 把素材合成为**面向中国读者的中文成稿页面**：
+
+- **模型 A 生成 → AI Judge 评审 → REJECT 把意见喂回重写（最多 3 次）→ 只有 PASS 才发布**。
+- **日期由代码动态注入**进两段 Prompt（强制按今天的精确日期判定时效、剔除旧闻、写页眉）。
+- 通过后渲染隆鑫 CI 的 HTML（含 Powered by Loncin 标识、每条带原文链接 + 中文小结、响应式适配手机），写：
+  - `briefs/<日期>.html` —— 当日存档（**按天累积**）
+  - `briefs/latest.html` —— **当日端口**（只显示今天）
+  - `briefs/index.html` —— 存档索引（往日列表）
+- 模型与时效线在 `sources.yaml` 的 `synthesis:` 段配置：默认 `claude-opus-4-8`；想省成本可把 `generator` 改 `claude-sonnet-4-6`、`judge` 改 `claude-haiku-4-5`（Haiku 须把该角色 `thinking` 设 `false`）。`new_within_days` 控制"多少天内算新闻"。
 
 > ⚠️ 这些 key / token 绝不要写进代码或 `sources.yaml` 提交。脚本一律从环境变量读取。
 
