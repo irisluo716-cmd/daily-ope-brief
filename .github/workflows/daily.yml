@@ -1,10 +1,13 @@
 name: daily-ope-brief
+
 on:
   schedule:
     - cron: "0 22 * * *"
   workflow_dispatch: {}
+
 permissions:
   contents: write
+
 jobs:
   collect:
     runs-on: ubuntu-latest
@@ -14,13 +17,32 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - env:
+
+      - name: 采集当日素材
+        env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           REDDIT_FEED_URL: ${{ secrets.REDDIT_FEED_URL }}
         run: python collect.py
-      - run: |
+
+      - name: 合成成稿（MiniMax 生成 + 评审，仅 PASS 才发布）
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_SIGN_SECRET: ${{ secrets.FEISHU_SIGN_SECRET }}
+        run: python synthesize.py
+
+      - name: 提交产出
+        run: |
           git config user.name  "ope-brief-bot"
           git config user.email "ope-brief-bot@users.noreply.github.com"
           git add briefs/
-          git commit -m "chore: daily material $(date -u +%F)" || echo "no changes"
+          git commit -m "chore: 每日简报 $(date -u +%F)" || echo "无变更"
           git push
+
+      - name: 失败时飞书告警
+        if: failure()
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_SIGN_SECRET: ${{ secrets.FEISHU_SIGN_SECRET }}
+        run: python notify.py "每日简报 workflow 运行失败（采集 / 合成 / 提交某步出错），请检查 Actions 日志。"
