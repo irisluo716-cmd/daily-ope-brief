@@ -43,7 +43,7 @@ python collect.py
 **需要配置的 Secret**：仓库 → Settings → Secrets and variables → Actions → New repository secret
 - `YOUTUBE_API_KEY`　= 你的 YouTube Data API key
 - `REDDIT_FEED_URL`（可选）= 你的 Reddit 认证 RSS feed 链接（形如 `https://www.reddit.com/.rss?feed=TOKEN&user=NAME`，或自定义 multireddit 的 `.rss?feed=` 链接）。数据中心 IP 下公开 `.json` 会 403，认证 `.rss` 可正常返回；建议建一个只含通机版块的自定义 feed，覆盖最干净。
-- `ANTHROPIC_API_KEY` = Claude API key（用于 `synthesize.py` 的成稿合成 + AI 评审）。
+- `MINIMAX_API_KEY` = MiniMax API key（用于 `synthesize.py` 的成稿合成 + AI 评审）。
 
 ## 成稿合成 + AI 评审（synthesize.py）
 
@@ -55,7 +55,7 @@ python collect.py
   - `briefs/<日期>.html` —— 当日存档（**按天累积**）
   - `briefs/latest.html` —— **当日端口**（只显示今天）
   - `briefs/index.html` —— 存档索引（往日列表）
-- 模型与时效线在 `sources.yaml` 的 `synthesis:` 段配置：默认 `claude-opus-4-8`；想省成本可把 `generator` 改 `claude-sonnet-4-6`、`judge` 改 `claude-haiku-4-5`（Haiku 须把该角色 `thinking` 设 `false`）。`new_within_days` 控制"多少天内算新闻"。
+- 用 **MiniMax**（OpenAI 兼容 `/chat/completions`，仅 stdlib，无第三方 SDK）。模型 / 端点 / 时效线在 `sources.yaml` 的 `synthesis:` 段配置：默认 `generator: MiniMax-M2.5`、`judge: MiniMax-M2`（M 系列还有 M2.1 / M2.7，按账号可用模型调整）；`base_url` 默认国际版 `https://api.minimax.io/v1`，国内账号改对应域名；`new_within_days` 控制"多少天内算新闻"。
 
 > ⚠️ 这些 key / token 绝不要写进代码或 `sources.yaml` 提交。脚本一律从环境变量读取。
 

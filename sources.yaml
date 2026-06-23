@@ -246,17 +246,19 @@ reddit:
     - robot mower problem
 
 # ---------------- 成稿合成 + AI 评审（synthesize.py）----------------
+# 用 MiniMax（OpenAI 兼容 /chat/completions）。密钥走环境变量 MINIMAX_API_KEY。
 synthesis:
   new_within_days: 5        # 发布日期早于「今天 - 这个天数」的条目，AI 须当旧闻剔除
   max_retries: 3            # 评审 REJECT 后最多重写次数（防死循环）
+  api_key_env: MINIMAX_API_KEY
+  base_url: https://api.minimax.io/v1   # 国际版；若用国内账号改成国内域名
   models:
-    # 默认全用 Opus 4.8（最稳）。想省成本可把 generator 改 claude-sonnet-4-6、
-    # judge 改 claude-haiku-4-5（注意：Haiku 不支持 adaptive thinking，需把 thinking 设 false）
+    # MiniMax-M 系列：M2 / M2.1 / M2.5 / M2.7（默认 M2）。请按你的账号可用模型确认/调整。
     generator:
-      model: claude-opus-4-8
+      model: MiniMax-M2.5
       max_tokens: 16000
-      thinking: true
+      temperature: 0.6
     judge:
-      model: claude-opus-4-8
+      model: MiniMax-M2
       max_tokens: 8000
-      thinking: true
+      temperature: 0.2

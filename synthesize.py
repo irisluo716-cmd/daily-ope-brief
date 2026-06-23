@@ -6,12 +6,14 @@
 - 通过后：渲染 CI HTML → 写当日存档 briefs/<date>.html、当日端口 briefs/latest.html、
   重建存档索引 briefs/index.html（往日按天累积，端口只显示当天）。
 - 三次仍未过：不发布成稿，写 review-failed 标记，退出 0（原始素材仍保留）。
-依赖 anthropic SDK；密钥读环境变量 ANTHROPIC_API_KEY。"""
+调用 MiniMax（OpenAI 兼容 /chat/completions）；密钥读环境变量 MINIMAX_API_KEY，仅 stdlib，无第三方 SDK。"""
 import os
 import sys
 import re
 import json
 import datetime
+import urllib.request
+import urllib.error
 
 import yaml
 import render
@@ -24,26 +26,39 @@ OUT_DIR = os.path.join(HERE, "briefs")
 SECTION_KEYS = ["company", "product", "weather", "review", "policy"]
 
 
-# ---------------- 模型调用（唯一与 Anthropic SDK 交互处，便于打桩测试）----------------
+# ---------------- 模型调用（MiniMax OpenAI 兼容接口；唯一外呼处，便于打桩测试）----------------
 def call_model(role_cfg, system, user):
-    """role_cfg: {model, max_tokens, thinking(bool)}。返回模型输出的纯文本。
-    用流式 + get_final_message 防长输出超时。"""
-    import anthropic
-    client = anthropic.Anthropic()  # 读 ANTHROPIC_API_KEY
-    kwargs = {
-        "model": role_cfg.get("model", "claude-opus-4-8"),
+    """role_cfg: {base_url, api_key_env, model, max_tokens, temperature, timeout}。返回模型输出纯文本。"""
+    key_env = role_cfg.get("api_key_env", "MINIMAX_API_KEY")
+    api_key = os.environ.get(key_env, "")
+    if not api_key:
+        raise RuntimeError("缺少 MiniMax API key（环境变量 %s）" % key_env)
+    url = role_cfg.get("base_url", "https://api.minimax.io/v1").rstrip("/") + "/chat/completions"
+    body = {
+        "model": role_cfg.get("model", "MiniMax-M2"),
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
+        ],
         "max_tokens": int(role_cfg.get("max_tokens", 16000)),
-        "system": system,
-        "messages": [{"role": "user", "content": user}],
     }
-    if role_cfg.get("thinking", True):
-        kwargs["thinking"] = {"type": "adaptive"}
-    with client.messages.stream(**kwargs) as stream:
-        msg = stream.get_final_message()
-    for block in msg.content:
-        if getattr(block, "type", "") == "text":
-            return block.text
-    return ""
+    if role_cfg.get("temperature") is not None:
+        body["temperature"] = float(role_cfg["temperature"])
+    req = urllib.request.Request(
+        url, data=json.dumps(body).encode("utf-8"), method="POST",
+        headers={"Authorization": "Bearer " + api_key, "Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=int(role_cfg.get("timeout", 300))) as r:
+            resp = json.loads(r.read().decode("utf-8", "replace"))
+    except urllib.error.HTTPError as e:
+        raise RuntimeError("MiniMax HTTP %s: %s" % (e.code, e.read().decode("utf-8", "replace")[:300]))
+    br = resp.get("base_resp") or {}
+    if br and br.get("status_code") not in (0, None):
+        raise RuntimeError("MiniMax base_resp %s: %s" % (br.get("status_code"), br.get("status_msg")))
+    choices = resp.get("choices") or []
+    if not choices:
+        raise RuntimeError("MiniMax 无 choices：%s" % str(resp)[:300])
+    return (choices[0].get("message") or {}).get("content", "") or ""
 
 
 def _parse_json(text):
@@ -171,8 +186,17 @@ def main():
         return 0
     raw = json.load(open(raw_path, encoding="utf-8"))
 
-    gen_cfg = sc.get("models", {}).get("generator", {"model": "claude-opus-4-8"})
-    judge_cfg = sc.get("models", {}).get("judge", {"model": "claude-opus-4-8"})
+    common = {"base_url": sc.get("base_url", "https://api.minimax.io/v1"),
+              "api_key_env": sc.get("api_key_env", "MINIMAX_API_KEY")}
+
+    def role_cfg(name, default_model):
+        d = dict(common)
+        d.update(sc.get("models", {}).get(name, {}))
+        d.setdefault("model", default_model)
+        return d
+
+    gen_cfg = role_cfg("generator", "MiniMax-M2.5")
+    judge_cfg = role_cfg("judge", "MiniMax-M2")
 
     # 第 1 次生成
     g_sys, g_user = gen_prompt(today, cutoff, raw.get("items", []))
