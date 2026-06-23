@@ -28,6 +28,21 @@ def _token():
         return ""
 
 
+def _resolve_mobile(mobile, token):
+    """手机号 → open_id（需 app 权限 contact:user.id:readonly）。"""
+    req = urllib.request.Request(
+        BASE + "/contact/v3/users/batch_get_id?user_id_type=open_id",
+        data=json.dumps({"mobiles": [mobile]}).encode("utf-8"), method="POST",
+        headers={"Authorization": "Bearer " + token, "Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            d = json.load(r)
+        ul = (d.get("data") or {}).get("user_list") or []
+        return ul[0].get("user_id") if ul and ul[0].get("user_id") else ""
+    except Exception:
+        return ""
+
+
 def _send_card(card):
     token = _token()
     receive_id = os.environ.get("FEISHU_RECEIVE_ID", "")
@@ -38,6 +53,12 @@ def _send_card(card):
     if not receive_id:
         print("未配置 FEISHU_RECEIVE_ID，跳过飞书通知。")
         return False, "no-receiver"
+    if rid_type == "mobile":
+        oid = _resolve_mobile(receive_id, token)
+        if not oid:
+            print("手机号转 open_id 失败（app 需开通 contact:user.id:readonly 权限）。")
+            return False, "mobile-resolve-failed"
+        receive_id, rid_type = oid, "open_id"
     url = BASE + "/im/v1/messages?receive_id_type=" + rid_type
     body = {"receive_id": receive_id, "msg_type": "interactive",
             "content": json.dumps(card, ensure_ascii=False)}
