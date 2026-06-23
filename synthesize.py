@@ -250,7 +250,7 @@ def main():
     html = render.render(brief)
     path = write_archive(today, html)
     print("已发布成稿：%s（+ latest.html + index.html）" % path)
-    notify.notify_success(brief, site_url)
+    notify.notify_success(brief, site_url, os.path.join(OUT_DIR, "latest.html"))
     return 0
 
 
