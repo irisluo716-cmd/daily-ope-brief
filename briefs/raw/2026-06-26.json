@@ -1,0 +1,758 @@
+{
+  "date": "2026-06-26",
+  "collected_at": "2026-06-26 05:00 UTC",
+  "log": [
+    "Federal Register（关税+排放）：3 条",
+    "CPSC 召回：0 条",
+    "天气预警：6 条",
+    "新闻 RSS（公司+新品）：35 条",
+    "YouTube 评测：34 条",
+    "Reddit 风向：16 条"
+  ],
+  "items": [
+    {
+      "category": "关税",
+      "title": "Agency Information Collection Activities: Submission for OMB Review; Renewal of Generic Clearance; Comment Request",
+      "source": "Federal Register / International Trade Commission",
+      "url": "https://www.federalregister.gov/documents/2026/06/24/2026-12710/agency-information-collection-activities-submission-for-omb-review-renewal-of-generic-clearance",
+      "date": "2026-06-24",
+      "summary": "Consistent with the Paperwork Reduction Act of 1995, the U.S. International Trade Commission (Commission) has submitted a proposal for the collection of information to the Office of Management and Budget (OMB) for approval. The proposed inf"
+    },
+    {
+      "category": "关税",
+      "title": "Initiation of Section 301 Investigation; Hearing; and Request for Public Comments: Germany's Persistent Underpayment for Innovative Pharmaceutical Products",
+      "source": "Federal Register / Trade Representative, Office of United States",
+      "url": "https://www.federalregister.gov/documents/2026/06/24/2026-12671/initiation-of-section-301-investigation-hearing-and-request-for-public-comments-germanys-persistent",
+      "date": "2026-06-24",
+      "summary": "The United States Trade Representative (U.S. Trade Representative) has initiated an investigation pursuant to the Trade Act of 1974, as amended (Trade Act), with respect to Germany's persistent underpayment for innovative pharmaceutical pro"
+    },
+    {
+      "category": "关税",
+      "title": "Twist Ties From China; Notice of Commission Determination To Conduct Full Five-Year Reviews",
+      "source": "Federal Register / International Trade Commission",
+      "url": "https://www.federalregister.gov/documents/2026/06/23/2026-12537/twist-ties-from-china-notice-of-commission-determination-to-conduct-full-five-year-reviews",
+      "date": "2026-06-23",
+      "summary": "The Commission hereby gives notice that it will proceed with full reviews pursuant to the Tariff Act of 1930 to determine whether revocation of the countervailing and antidumping duty orders on twist ties from China would be likely to lead "
+    },
+    {
+      "category": "灾害天气预警",
+      "title": "Flood Warning — 87 条活跃预警",
+      "source": "NWS",
+      "url": "https://www.weather.gov/",
+      "date": "2026-06-26",
+      "summary": "示例区域: Allen, KS / Neosho, KS / Reno, KS"
+    },
+    {
+      "category": "灾害天气预警",
+      "title": "Flood Watch — 16 条活跃预警",
+      "source": "NWS",
+      "url": "https://www.weather.gov/",
+      "date": "2026-06-26",
+      "summary": "示例区域: Washington / Rice / St. Clair"
+    },
+    {
+      "category": "灾害天气预警",
+      "title": "Flash Flood Warning — 10 条活跃预警",
+      "source": "NWS",
+      "url": "https://www.weather.gov/",
+      "date": "2026-06-26",
+      "summary": "示例区域: Barry, MO / Butler, KS / Allen, KS"
+    },
+    {
+      "category": "灾害天气预警",
+      "title": "Winter Storm Watch — 4 条活跃预警",
+      "source": "NWS",
+      "url": "https://www.weather.gov/",
+      "date": "2026-06-26",
+      "summary": "示例区域: Western Lemhi County / Eastern Lemhi County / Bitterroot/Sapphire Mountains"
+    },
+    {
+      "category": "灾害天气预警",
+      "title": "Severe Thunderstorm Watch — 3 条活跃预警",
+      "source": "NWS",
+      "url": "https://www.weather.gov/",
+      "date": "2026-06-26",
+      "summary": "示例区域: Beckham, OK / Blaine, OK / Canadian, OK"
+    },
+    {
+      "category": "灾害天气预警",
+      "title": "Severe Thunderstorm Warning — 1 条活跃预警",
+      "source": "NWS",
+      "url": "https://www.weather.gov/",
+      "date": "2026-06-26",
+      "summary": "示例区域: Beckham, OK"
+    },
+    {
+      "category": "大公司动向",
+      "title": "Is Generac (GNRC) Quietly Redefining Its Industrial Power Mix With New Belvidere Capacity?",
+      "source": "simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWWtiemZkQ18zNDNLT2tYT0hoajF2MFYwaXNweVUxZzVnZkZQRGtEOGlqajZEM0dhQkE5LUZHc0hycnR4U3FsY2JjaHB1N0QwN0g0SWxtVFE2VVdUdVM3VWY5UDdzcFE1ajlBTVgwMW9VZU1qRFJ0eTZud1FEZC1pM0x1aHdJRW9aV1hIU1hnWXRvdzFMRmd5clowcC12dWRIbzgyUlhyVkJUc3kwR3ZXMnppV3pOdWlPWUFOYk9sVXNHS1hLUXFSSDVFY3pNODYwTlpkSk5FZVfSAdgBQVVfeXFMT1lrYnpmZENfMzQzS09rWE9IaGoxdjBWMGlzcHlVMWc1Z2ZGUERrRDhpamo2RDNHYUJBOS1GR3NIcnJ0eFNxbGNiY2hwdTdEMDdINElsbVRRNlVXVHVTN1VmOVA3c3BRNWo5QU1YMDFvVWVNakRSdHk2bndRRGQtaTNMdWh3SUVvWldYSFNYZ1l0b3cxTEZneXJaMHAtdnVkSG84MlJYclZCVHN5MEd2VzJ6aVd6TnVpT1lBTmJPbFVzR0tYS1FxUkg1RWN6TTg2ME5aZEpORWVX?oc=5",
+      "date": "Thu, 25 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Generac focuses on backup power strategy, shares trade steadily on NYSE",
+      "source": "Ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZUVaV21hOXh6RDZScVZVWkxZeEF5bmxTX2JhTGo0Smx4d1pFZmVmTWFSMi1zd3N4WmxCbWdJMnY2ZG5aQWhickJET3FkOVBjTnpqVGwxZ3pvMEZJMml5ZHIwUV9NcmdjMTFPUk5LNVhZQkdrZHpSckRWdEhMaloyUGRIdE55dUdoVl9BbkFYQzdnWE1MZURJM0prMVR4ZEVUblFPSGZnaDd4d05XbGdGd2dCYlJ1U0RvYnJic1dmOXEwMHV3QUtaMQ?oc=5",
+      "date": "Thu, 25 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Generator runtime and maintenance guide",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQa2tLRFhaOUpzdENmVUZaVmlTamN5U3RWNkh4a2x5b0VhUTV5c0tKYWo0YWl5RmNPUFVHdDJBWG5pN2F3b212SzRtdWVCY2ZvRUNoc000WjR6bnVRUFlwTFljUlcyRTEtMmNrTXNrUENoT3FBSC10NTNFSElPQ1hQSWlMRmdqdnI4TEpab09B?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Toro donates equipment to support University of Minnesota Landscape Arboretum",
+      "source": "Landscape Management",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTGhxdi1sdkxEazA1UzJNM2d2aUZ3LXdxeTNPYm5MekVHN0hqQUFLUDZpUjhEM2VKd3JtTEZnb3E5RmxzSDRJN1hZelZMMkJCYjJrcHIxN3dCMFQ1MEQwdXFBN0EwM3loTlBWV2FxSWZucG5FMlRncXJncHZJc1JUVFZRNHNvcnh5S2ptaXZsQ3lQNGdqSXdjaFpkbkxoNHUzcE5tZFJ6T293bEUwQzNpelA0b3I?oc=5",
+      "date": "Thu, 25 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Prime Day Cuts the Price of This Impressive Robot Lawn Mower That Can Handle Half an Acre",
+      "source": "CNET",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUjZFaTNmNTZzQ1FablotNHJsRUpOMGk3M3JOby1XWEtiTXNIaW1sampEdXE0YVh0ZnZaNGdCbENRNUQxM1h2dFhaWTZISEh1QkJqUjZoQ1EtaFBpYmV6dHlTTlgtdWxmY1dMRGNOV3U2cHI1amw1dUxWY3p4T2xVelE3UXhodw?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "I Tested This Husqvarna Robot Mower. At $1,000 Off, It’s One of Prime Day’s Best Lawn Care Deals.",
+      "source": "aol.com",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBoQ3dHZXVad0k4VnpoclhuQlZxM0dKQk13QldZQkJhSy0yMWk4a2dCWGpzblpGeHctTFJUX05La3NhLWdvbUctM2NNSFRYUmZxNVJIbHhxWUpSbms1dFhoWmIzWjJRZXRXeDNrZm95LW42Y09YVEdhRkdRbnFvMTQ?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Husqvarna analyst cuts price target ahead Q2, shares under cautious scrutiny",
+      "source": "Ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeXZTaER0a21HZnNuSjJMRUFfVG5jNlZuTzhSNmw2YXBOWkdZbzR4VUdHeExsb1U0cXFXVXNETXlEVnk0a0RYcGsyZklfRU05UlBoSG40a1Uxb2VENlVIRENVQXhjT19TRG1BUHpYX1p2V2NOQWtDM1dDN1d2SGFhTXh3Smo5Y2pHN3NFQ2FVSkZTWG51a3JUYUFIS2szVFRUYzlfUmRVVW5tcXBDTWQ2Tk9DY2xITUhTZUIyTVR0bDYxemc?oc=5",
+      "date": "Thu, 25 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Husqvarna updates its capital structure, shares reflect the new split",
+      "source": "Ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdThqSng3bUxobjEwUUlyUk96TVd2dzl0UXVJajhjcEdpa0tjMXFXZVRNUHdXNVJaWlFnMFhYQU5QUXFickhwQU4yUGJPX2E5QXpzdFZ0MEpVRVo1SjVMaWo3ZkdnSmt2X2FYQk1yTnVCZkQwc0p1cHIzcmt4am42bWtGcGhuNThQWWJsUHZxb2F0TjZBOFBqRFhTdmdCeklGLUNPeEhhd004N0ZJQVkyX2NNeWIya1VNUUN1YVp4YmJlbFk1U0E?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "I’ve compared the top robotic lawn mowers, and these are the models that keep your lawn perfect with almost no effort",
+      "source": "The English Garden",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOEhLTUVDTjBDTmtBWEJETUFFWFU4SUU2aUY5ZlNfRjQzdTJGeFd2VWRZRUQ5QnJaa0ZwYlEwN2Y2eks2M2hDMG40eHVNX0pHUzIzSVh2TDdHN25Vbk1Kb2h0N0JvYjB5ZG5NeTJXcjJ2b3psaEQ0TTk1R3ZqRzFhNQ?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Dreame's autonomous Lawn Mower packs more self-driving tech than most cars",
+      "source": "Yanko Design",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVmR5SGdYM2tiSUtMSE5KY2ZFUUl0cTVIbXUyTnE1M0pHbHgtMVhhMnd5TTZzTGF1N0lxN2JuMDhYNV9FUGg2RzFIZ3J1d29acHVHMF9JSEo4WXRLOWgxc1hWcVdteWFGZnlFS3NtcC1LNXcyZ052dzZRSERoR016cVBzWFhRMmU0MGQ4Z1NoVzBOYVgyRVIwZ1YxVUY1b0ZCX0pvdjJqUzlGRHdpZXhWaGxJa9IBuAFBVV95cUxOWXBSY2Z6cDl0NUpHRVZ1bUduS21xaTNIUFBZZ0hmR2pjZnptZExLX2g1NFFObVlBV1l3SmtPSnF3Q05LVGhRVEpyOVNBNm50aC00anR0MnAwV3BncmUtUlBkTHJ4c0paMU1GeWJEWFg5QjQtTjgyMGhPbXo2dGhkSTh5dU1tXy0tYnBNRkNWVGdPQzJKYWRMS3d2Z2Q5Y0M4WGxpd3BTcGdCU0dpSVJTSGFwR3dJbUpR?oc=5",
+      "date": "Fri, 26 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "The Sunseeker S4 robot lawn mower is down to its best-ever price for Prime Day — save over $800",
+      "source": "Mashable",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVDA2OHNGT1RQcXlyLUg3WTZReTMtY2xTY0RiSDh0enlYV1hsekFwcl9EQWNadE9SN0l4dmQ1YWEzT0NPdWNYekhxOHpNaGF0Q1oyczg3cHJYOHhldnphdmxQNnpZSjRhVEhvMnBKMEJOQjBlUlRwYkwtMlBMNmZVZUFSbmVra2RoMXZR?oc=5",
+      "date": "Thu, 25 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Segway's Flagship Robot Mower Is $500 Off for Prime Day—and That's a Big Deal",
+      "source": "bobvila.com",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE50YXlBY3pqMDRRX0tqQmg1Z1lMVGRjc281cHl6OC0zZXF6cGdFSWJjWHozS3dXa3h4RFE0QkRnMEdCUE41bFlOb3M1VTYtdzJVcHNWNXE2Q1E5Mk5GblVhSTRuQ1JYV0xRelVKeXR4SlVucWMxdm45dG5Tc3FXUQ?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Save Up to $1,059 With Mammotion's Prime Day Robot Mower and Pool Cleaner Deals",
+      "source": "CNET",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU1E4ZmlHTHVyV2kxcW9rS3BoTzFBejByYnkwRHVpTlVtN1ZrS1V5c1JGWEprNkNVR3hmeDFHWVBndFJCakVFY3dhOV9MNHRCY0ZFRnE1WktZdC1xdVByTS1EVnpuREo3bkRCSzMzMjdQLWwwV2RiamNHdk43cFBkUVNZZmpoUUFFb1dVYWo2OUpkaVVSWEFNaA?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Prime Day-2 Deals: Bluetti Prime Day Sale with exclusive new power station lows, Segway Navimow X4 robot mower lows, more",
+      "source": "Electrek",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQemU3eExsdF9JcEVEbkVEOWdkQkNJcnkwdEo0YmhybUJWUGNoV1l1X0MtaGZjRXRzN0dFZ0FfZDlZVllQODc1NU5taFY3anJVQl80TE9zeUFLSXZ5SzJBVGFIVmhLUjRrcjdHQlIwZWIzVkJwSktCUGV6QjZMWFhpNjREcjZaUExRT204a3Jkek9KTVQwd2Q3Y1J3OUc?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Best robot lawn mower deal: Mammotion Luba 3 AWD 3000H drops to $2,499 ahead of Prime Day",
+      "source": "Mashable",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9SNnQtaHZoQ1A0Rm41eDRRU2hGTXNCd0VudkVaTXMzMFVOVFdKZk01OTRyWmF5VmtxclBIMmhSSjQ1Yzc5QXEtVDlReWVRVjZ3ZjJnN3V2VXl2Z3dvd1BJVWZwaDRGT2FPM0hEUjFkSG9EZW8?oc=5",
+      "date": "Thu, 25 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Can This Mini Robot Mower Beat a Commercial Lawn Service? Mammotion Luba Mini 2 AWD",
+      "source": "YouTube",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1YOUluVC13VGE1Y3RBUzFvNHFZMVFTN1Nsb3g5N3IwV01YY3lVSXUxNWxlUFBQMWFqOVZ1MGYtNGJTUXczbC1KRnVoMnhVUlRHNFFaSlZ4QmhjalFl?oc=5",
+      "date": "Thu, 25 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "The Best Prime Day Robotic Lawn Mower Deal Is Here",
+      "source": "IGN",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ObmhBT2NMZ1o2U1lIVkgzdWI4UHRuRmFvV0hvS19LdGtNamUwVlBVT3JHSmgzeWF5QTJONzdzMVU4Rl9MVWhFX0dOYzBmYXJfOHlSX3ZLTDR6c18tcW9kTjdpSFF2VUdwLUpqMk5GWGgxb2ZnbFE?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Mammotion cuts over $1,000 on its flagship robotic mower for Prime Day",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOVlCNUxwX3AwWGY1anV6czE4d1QzVVVFUk40d0dPVlR6VmNtUTg5N0JlX29zQ0l5TVZ4LUlHcjFZeEIyYTFCNXVCd1FQNUZrNlIwb1h3c19pdEdUZXFSck5RMWM4MlptVm1JMHlwYUc1V0JrejdSTFVKODdfUnA1dHVZajBxTm0xZHdUYmt0R1I4d1lTLUFjZ3BFY1dJVWhCYi1aZHU0VndURi1BNE1saDBlRHBKMkF1dDBOeHNLenc?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Best Home Depot deals: Free DeWalt tools and deals on robot lawn mowers and robot pool cleaners",
+      "source": "Mashable",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE01QVRZM0xfOGlNbVYydk41UUpsMWMtLWVVOGtOUlhQN1ZzNjBVQWJfelNwUXdtdWJ0QkpiLTU0cFNadm80YzJscC1iWGppalkzWDE3SFYyNk9nZGllNXQ5ak5QYWFKQnM0VDNpRHotbw?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Mammotion Launches Biggest Prime Day Savings of 2026 on Robotic Lawn Mowers and Pool Cleaner",
+      "source": "MacSources",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBhQ1MtWUU5RlpjMWdSMFdkRjBiMktlYVBFcmJublBpREhGRVFDRjM1WWp1MlJKdmw5QlBKeW9EczdqZlJ5dWZ3VWRmTG9oTWc2bnRyWllnS3JXUWZUclhpa3RORjk0UHhkMnFuWWxHMWU3MVRlZ1ZXWFU1cWFMQdIBhgFBVV95cUxOeDdVejVYem1fRXlOdlM3amhzM0RDMFhrNU4wLWFYU1FnOEtnZFctQ0UxaVo2a29sLUVJNUc4eFRQYnhUMWJNOGpmeW1qN3dXUUdfWG9TOHlORWhycGJqZWtia0xSUW1iNG05aG90WnJLcEVXeFdSYk8xWnQ3cXZ1N01TdUlqdw?oc=5",
+      "date": "Wed, 24 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "新产品",
+      "title": "Anker launches SOLIX S2000 power station + bundles starting from exclusive $598, EGO Z6 zero turn riding mower bundle new low, more",
+      "source": "Electrek",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNd05lQlFsNWMxRHFtVTFRWjNvN1RzZVNzdnFYV0xIZnRjM2lxb3M2ay1GX083eXBKRTgyWFNxMGRtREN4bkNnZjVkaFlBb2xqMDM4ZzNFeHozNjdmd0RSY3pybDBqa0thNHhrZEppNkFkakJQTWNRMVJsMHNDMFRBX2gtVkpPQjV5TTJTeGJvdnVGNGREcjk5MzRxS0NUb2Y4OFNyUS02cDZOejRVd2VIYVdHSDlLTHozV2xzUWgwWXRqODg?oc=5",
+      "date": "Tue, 02 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "新产品",
+      "title": "Pre-Orders Now Open for Dreame A3 AWD Pro: The Robotic Mower that Embodies Marshawn Lynch’s Championship Standards",
+      "source": "Barchart.com",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNdHVrSnFjdnlkc25odXpBMUQ5dFRuWll2bUVOOFB1SmxrTG4xaXV0aTRqUTNQaHItQk82Vy1Hb18xWV93a3UxdWhaM1pLX3BpX243eEVfWXh4R3JacjRqY2xVYS04SGtlX3JYYW5HSk1Xdjc0aF9kaUI4dl9WaEEwb0hYZ3dwdFE3SmtZS1k3QVBpd3F3cVotbHhTV0I3VDV5a25INVNBajlNMmxscTJhMUh5bGMxQWt1d1RVS0t5WnEtalltVTlxV211ZF9ucG9lQ2R6NmFobzhkZlRrenpBYVFQSDlvRk9NOXc?oc=5",
+      "date": "Wed, 11 Feb 2026",
+      "summary": ""
+    },
+    {
+      "category": "新产品",
+      "title": "New Dreame A2 1200 robot lawn mower with LiDAR now available in Europe",
+      "source": "Notebookcheck",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeEgwXzJlSjZ1MFdXRkVobU05MXlKOTFCM3ZCV216NnktV0x3TVJYTlIyN0xZeUg4R3R2VFEzTVpkLUhDN1BTcDBZRTNfYUVSNko3UWlENWNsek9vSmdXeXpJZlhEUVZISV9EMnE3QTFPY3J6eWZRLUt0aDZXT0tqei16enNTN1JEN3puaFBQYzVuTHBydHNPeGV0NWdXMGJobERtTVdmSURZNGdMWnlIUTdJdk1JQQ?oc=5",
+      "date": "Tue, 17 Feb 2026",
+      "summary": ""
+    },
+    {
+      "category": "新产品",
+      "title": "Dylect unveils ‘Airwash Go’, a cordless pressure washer gun",
+      "source": "motownindia.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTU13YW5LSWU4T1pJSG5VTFE4TG5TNEo1Q1N5RlJXbDg4dVpxUnhBYm5fSW03NGhjWHlEN1NXWndTeF9TSzZvcVVBQnZPbDdXLU44anRQeU5VTFhnWm5CMzRzTUtKVUgtMkZXTUFSWXc0aXVvZzFsMllsakdsNlVwelBKZFRiOHdUZGd6dDhaN0RGSDJHU2E3WTJZMl8wTEYtYldlTlRpXzgzZHB6ekhsU0ZEZjBXSnRzeVE?oc=5",
+      "date": "Tue, 21 Apr 2026",
+      "summary": ""
+    },
+    {
+      "category": "新产品",
+      "title": "Mammotion’s LUBA robot lawn mower introduces ‘world’s first’ navigation technology – I’m seriously impressed",
+      "source": "t3.com",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPOUtNbV9kcmVMZHVrUkVCN3luM2J2WHNyMl9PVkF6ZFg2b2ptR3hJRmNHbklYTkphR0QyUUt4SHBGMVk4cS1hMm9NeVc4TDVSSENQbUNWa3FNay0tdlc2WmJxV3lJWll1NFFkb1Exd0Y4bVNac3dEeWh2UHlWbkhQNWMteEZNYnVlWDdtYm1WRmZMTGxsZTVzVkJieEJ6emliWHU3QUpYbjJPZDBTQm1XMUkwd00tU0RTbVRmZW1FYTUzMm1CcFV4VGJVU2M5VV9vNVpiNi1B?oc=5",
+      "date": "Sun, 04 Jan 2026",
+      "summary": ""
+    },
+    {
+      "category": "新产品",
+      "title": "ANTHBOT Unveils Innovative Robot Lawn Mower Genie for a Real Out-of-the-Box Experience",
+      "source": "PR Newswire",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmlnemtxLWoxTEVrNzA2NFVzcDAzUEZ3dUM3ZEcwWm1xM1J1czQ4dXcyNkhtMENhc1hRVjFpelBsdVVnU0xUdnA2VHFtbUFUR3lPbDNHSVJscWRfMHk4cFYyY1FoaVlCVWFIcTNYOUEwVUI0MEtfQVczVVZnYmwxR0xoZWFYc19IbnhhbmZpTXN2blZVUmQ3YkFkNnlTTnhzOW5QRjZOUjNRVUIyZHVmRllTMVhZUi13Z2tybmpoNDVsMm9nQkVlaFhwT1l0YUN4cUJja3pWSmoxQQ?oc=5",
+      "date": "Wed, 28 Aug 2024",
+      "summary": ""
+    },
+    {
+      "category": "新产品",
+      "title": "Dylect Unveils Next-Gen Pressure Washer ‘Flow Prime’ At Rs 5,499",
+      "source": "BW Auto World",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRnpYUGZvWVdkN01kUTFZN0pOOWtVRkh1d3MtOHFwVThDQkptUmxvVmhLM0Vobjk0VnhYWmNVWUNNUzh2dWxvYXhoeHg4d2NPY3V3SFMtTmZYTGNBeWRKYllRSVlfYlNQTzNwcVI1LXdyck56TXN2c0tiT1RsNFA2VlFaOURFdFRYUVljVi0wYkthWGp6XzRpd2JJeUdLLTMyTHN3?oc=5",
+      "date": "Thu, 18 Dec 2025",
+      "summary": ""
+    },
+    {
+      "category": "新产品",
+      "title": "Reviewing the Segway Navimow X3 Series Robotic Mower",
+      "source": "Residential Tech Today",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTGozRFJtNkhBU24zQTlZQUtpb0hUd1k3cnM1YmFzTWZ0VnRBd2lkendXLUxWZ2ItWUJhblZ1RUhfUHA0QnBKaTZCMEN0Vm44U2RsQTM3Z1pjb2N5MDE5ZVMwNERKUlZzRTh3ZjRmNzRNRWMwSnpsZkVUWWowRjh1Vm1aZU8?oc=5",
+      "date": "Wed, 14 May 2025",
+      "summary": ""
+    },
+    {
+      "category": "新产品",
+      "title": "Greenworks' newest pro-tier 3,000 PSI electric pressure washer falls to $360 Amazon low (Reg. $450), more models from $82",
+      "source": "9to5Toys",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPY2R3Ykw2dHB0U2MzQXhIVWxoV3RYX1dMMmVZMXk2SmJYR2JUZ1V2cnU4V2lmdDVrQ2dVdjZBU2ktZDBGbVFUYnlMV2F5RVdnemtUcExhcS04eW1JalRudE91eDBpT2tNbWtlTXRPNDhvcHEtNHdoYUo2eXVfRkdDX0UwTVdiUkhsRlQta0JEbjA?oc=5",
+      "date": "Fri, 02 May 2025",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "New From Mi-T-M: JobSite Pro Compact Trailers",
+      "source": "Power Equipment Trade",
+      "url": "https://www.powerequipmenttrade.com/new-from-mi-t-m-jobsite-pro-compact-trailers/",
+      "date": "Tue, 23 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Equip Announces Three Nights Of Entertainment",
+      "source": "Power Equipment Trade",
+      "url": "https://www.powerequipmenttrade.com/equip-announces-three-nights-of-entertainment/",
+      "date": "Tue, 16 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Rotary Adds To Sales Team",
+      "source": "Power Equipment Trade",
+      "url": "https://www.powerequipmenttrade.com/rotary-adds-to-sales-team/",
+      "date": "Wed, 10 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "June 2026",
+      "source": "Power Equipment Trade",
+      "url": "https://www.powerequipmenttrade.com/june-2026/",
+      "date": "Mon, 08 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Equip Sells Out Its 2026 Exhibit Space",
+      "source": "Power Equipment Trade",
+      "url": "https://www.powerequipmenttrade.com/equip-sells-out-its-2026-exhibit-space/",
+      "date": "Tue, 02 Jun 2026",
+      "summary": ""
+    },
+    {
+      "category": "大公司动向",
+      "title": "Equip Announces Expanded 2026 Women’s Programming",
+      "source": "Power Equipment Trade",
+      "url": "https://www.powerequipmenttrade.com/equip-announces-expanded-2026-womens-programming/",
+      "date": "Tue, 26 May 2026",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "LUBA 3 AWD: The Ultimate AWD Robot Lawn Mower? | Extreme Terrain Test",
+      "source": "YouTube / ManShed",
+      "url": "https://youtu.be/laVnzvszMfg",
+      "date": "2026-06-26",
+      "summary": "Upgrade Your Yard. Unlock Your Biggest Summer Deal. 6.23–6.26 Save up to $1059 + Free Gift Mammotion LUBA 3 AWD: ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Mammotion LUBA Review | The Robot Mower That Creates Perfect Lawn Stripes",
+      "source": "YouTube / Homemaking Without Regrets",
+      "url": "https://youtu.be/AGYJdj81Fso",
+      "date": "2026-06-26",
+      "summary": "Check today's price on AMAZON here → https://urlvue.com/r/B0GR973C2R-yt-z4egc (affiliated link) Mammotion LUBA 3 AWD ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Best Robot Mower for Large Lawns ",
+      "source": "YouTube / Zippy Lawnz",
+      "url": "https://youtu.be/K7Kcq9vvCYM",
+      "date": "2026-06-25",
+      "summary": "Best Robot Mower for Large Lawns — Yarbo vs Navimow Terranox vs Mammotion LUBA 3 Looking for the best robot mower for ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Luba 3 AWD Review (2026): What You Need to Know BEFORE Buying ⚠️",
+      "source": "YouTube / Trendy Product Lab",
+      "url": "https://youtu.be/YC_5vvW7fNA",
+      "date": "2026-06-25",
+      "summary": "Product links are available in the comment section below. Check for the latest prices and best deals. As an Amazon Associate, ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Why my robot mower won&#39;t cut in the shade #robotmower #smarthome #lawncare #Ecovacs",
+      "source": "YouTube / This Smart House",
+      "url": "https://youtu.be/ngRciC-Gh5s",
+      "date": "2026-06-25",
+      "summary": "My Ecovacs GOAT A3000 cut the sunny half of the yard perfectly — then refused to touch the shade. After a month of testing, ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Best Manual Lawn Mower? LawnMaster LMRM200 Review",
+      "source": "YouTube / BS Electronics",
+      "url": "https://youtu.be/1EQqIYawNQY",
+      "date": "2026-06-25",
+      "summary": "best electric lawn mower,fast lawn mower LawnMaster 20\" 5-Blade Push Reel Lawn Mower Review | Best Manual Lawn Mower?"
+    },
+    {
+      "category": "用户评论风向",
+      "title": "✨ Prime Deal !Must-Have For Campers — Jackery Explorer 1000 v2 Portable Power Station — Review",
+      "source": "YouTube / Tech Deal",
+      "url": "https://youtu.be/ZNeSf_C2ri4",
+      "date": "2026-06-26",
+      "summary": "Check the Price of this Portable Power Station: https://amzn.to/4eLjW52 The Jackery Explorer 1000 v2 Portable Power Station ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "5 Best Solar Generators for Home Use in 2026 (Top Picks Reviewed!)🌞",
+      "source": "YouTube / SolarPulseHaven",
+      "url": "https://youtu.be/sUFUCKpKcLw",
+      "date": "2026-06-26",
+      "summary": "Power your entire home with confidence! Discover the 5 Best Solar Generators for Home Use in 2026 that keep your lights on ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "I NEVER Say This in a Review, But the Bluetti Elite 300 is Almost Perfect",
+      "source": "YouTube / The Old Jarhead",
+      "url": "https://youtu.be/vQ_0bzMs1GY",
+      "date": "2026-06-25",
+      "summary": "I've tested a LOT of power stations — and I always try to find something wrong. With the Bluetti Elite 300, I couldn't. Not one thing."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Bluetti Elite 300 Update Review: Game-Changer for Home Power Backup?",
+      "source": "YouTube / Best Ever Reviews",
+      "url": "https://youtu.be/IBCrJ5X7R_w",
+      "date": "2026-06-25",
+      "summary": "Is the Bluetti Elite 300 the best portable power station for handling frequent outages? BLUETTI Elite 300 Portable Power Station, ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Review Adamoss Generator Cover for iGen4500 and Predator 3500 4375,Wen 3800 Honda EU3000iS,Heavy Dut",
+      "source": "YouTube / Tested & Twisted",
+      "url": "https://youtu.be/g3aQMQ1UAho",
+      "date": "2026-06-25",
+      "summary": "Check out the full review: ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Review QH.HOME Waterproof Generator Cover 32x24x24 inch ,900D Heavy Duty Oxford with Secure Windproo",
+      "source": "YouTube / Buy Curious",
+      "url": "https://youtu.be/wW5tqKYRGpM",
+      "date": "2026-06-25",
+      "summary": "Check out the full review: ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Exide 5KW Power System Review | Home Backup Solution | Inverter &amp; Battery Setup",
+      "source": "YouTube / eXCELLENT kNOWLEDGE jUNCTION",
+      "url": "https://youtu.be/kfB_9ejI0x0",
+      "date": "2026-06-25",
+      "summary": "ExidePowerSystem #ExideInverter #5KWPowerSystem #HomeBackup #SolarInverter #ExideBattery #PowerBackup ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Medical-Grade Power Anywhere: ERAYAK 4500P Review",
+      "source": "YouTube / Erayak Power",
+      "url": "https://youtu.be/scQy4Ijl8MM",
+      "date": "2026-06-25",
+      "summary": "Need reliable power for your expensive electronics? ⚡ The ERAYAK 4500P Inverter Generator delivers medical-grade clean ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "✨ Prime Deal !Massive Prime Day Savings — DuroMax XP11000iH Portable Inverter Generator — Review",
+      "source": "YouTube / Smart Byte",
+      "url": "https://youtu.be/3zJCS4w26BM",
+      "date": "2026-06-25",
+      "summary": "Check the Price of this Portable Inverter Generator: https://amzn.to/4b3eFoj The DuroMax XP11000iH is a high-capacity portable ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Pitco 35 lb floor model Liquid Propane Gas Fryer Review",
+      "source": "YouTube / Critic Review",
+      "url": "https://youtu.be/bMXe47Pszzk",
+      "date": "2026-06-25",
+      "summary": "Check Latest Price Here https://omnixbuy.com/pitco-commercial-fryer-system-12/ ✓ Product Overview: Portable Silent ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Bluetti Honest Review &amp; Comparison Elite 30, 200, 400 &amp; Solar",
+      "source": "YouTube / Meyers Makes",
+      "url": "https://youtu.be/guD6HUnD46M",
+      "date": "2026-06-25",
+      "summary": "In this video I do a comparison and review of three diffferent Bluetti power stations. I show them in action using large tools, using ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "solar 12 volt water pump unboxing  and review",
+      "source": "YouTube / Tech Suman ",
+      "url": "https://youtu.be/ukwL4gDtXw8",
+      "date": "2026-06-26",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "TDM.VN | Review máy bơm tăng áp Panasonic GA-200FAH nước nóng lạnh mô tơ dây đồng cao cấp",
+      "source": "YouTube / TDM Tuấn Đức",
+      "url": "https://youtu.be/nReQTrpwXjg",
+      "date": "2026-06-26",
+      "summary": "TDM.VN | Review máy bơm tăng áp Panasonic GA-200FAH nước nóng lạnh mô tơ dây đồng cao cấp Xem máy bơm tăng áp ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "✅ Best Cooler Pump Review | Value for Money #shortsfeed #youtubeshorts #desidshop",
+      "source": "YouTube / Desi D Shop ",
+      "url": "https://youtu.be/qoO53KqO5jU",
+      "date": "2026-06-25",
+      "summary": "Best Cooler Pump Review | Value for Money #shortsfeed #youtubeshorts #desidshop CoolerPump #CoolerReview #AirCooler ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Rechargeable Water Pump - Uses DeWalt Battery - Off-Grid Transfer Pump",
+      "source": "YouTube / Canadian Dreamer  ",
+      "url": "https://youtu.be/oEdOMfZqnaE",
+      "date": "2026-06-25",
+      "summary": "In this video, I test out a rechargeable water transfer pump that runs on a DeWalt battery. Great for off-grid living, gardening, and ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "MESIN POMPA AIR TENAGA KUAT TAHAN LAMA DAN IRIT",
+      "source": "YouTube / Indformatips",
+      "url": "https://youtu.be/XW6G7M28z9g",
+      "date": "2026-06-25",
+      "summary": "pompaair #pompaairotomatis #mesinair #pompapendorong #pompasedot #pompacelup #pompabooster #pompasumurdangkal ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Review selang alkon selang pompa celup sunny hose selang fleksibel 2&quot; 50 meter 100 meter yamamax",
+      "source": "YouTube / TokoSuryaSurabaya",
+      "url": "https://youtu.be/2l5wnBR4-j0",
+      "date": "2026-06-25",
+      "summary": "TOKO SURYA SURABAYA Jln. Kapas Krampung 12-b Https://wa.me/+6289612345368 089612345368."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "6 Best Small Zero Turn Mowers 2026! Big Power, Small Size",
+      "source": "YouTube / Homey Vibe",
+      "url": "https://youtu.be/G4qiqFszSGM",
+      "date": "2026-06-25",
+      "summary": "lawn care fanatics! If you've been staring at your compact yard and wondering, \"what are the top rated zero turn mowers out there ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Review UPLUS NEW TECHNOLOGY BATTERY UPLUS U1 Riding Lawn Mower Battery, 280CCA Garden Tractors Batte",
+      "source": "YouTube / Green Space Pro",
+      "url": "https://youtu.be/U763Pm43Zu4",
+      "date": "2026-06-25",
+      "summary": "Check out the full review: ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "John Deere Mower Rant",
+      "source": "YouTube / Bush Fix Farmer",
+      "url": "https://youtu.be/elnTz9wX0HU",
+      "date": "2026-06-25",
+      "summary": "John Deere S 120 Mower Review."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Best riding mower for small yards! #lawnmower #mowers #review #cubcadet #xt1 #flipping #flip #sell",
+      "source": "YouTube / The Mower Fam",
+      "url": "https://youtu.be/7Ff8HJgNa5c",
+      "date": "2026-06-25",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "ATV &amp; Mower Loading Ramps: Easy Setup &amp; Use Review",
+      "source": "YouTube / Charles Moore",
+      "url": "https://youtu.be/8xcsANoJCXk",
+      "date": "2026-06-24",
+      "summary": "Hey everyone I picked up 7.5FT Aluminum Loading Ramps, 1800 lbs Max Capacity, Folding Ramps for Pickup Truck & Trailer ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Seven year review of the John Deere E140",
+      "source": "YouTube / construction 25 garage",
+      "url": "https://youtu.be/uka4YvaSyIc",
+      "date": "2026-06-24",
+      "summary": "It's been a pretty good old tractor so I figure out the side to cut some grass and talk about it when I'm cutting the grass. Hope y'all ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Predator Rototiller Product review",
+      "source": "YouTube / Strawberry Ridge Homestead ",
+      "url": "https://youtu.be/rGUPb_-8cp4",
+      "date": "2026-06-23",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "6 Best Cordless Tillers Of 2026! My Honest Review ",
+      "source": "YouTube / Homey Vibe",
+      "url": "https://youtu.be/00H5-PzkQBQ",
+      "date": "2026-06-20",
+      "summary": "Are you looking to upgrade your garden game this season without dealing with the hassle of messy gas engines or restrictive ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "TOP 5 Best Rear Tine Tiller 2026 | Rear Tine Tillers That Make Gardening Effortless",
+      "source": "YouTube / Next Review",
+      "url": "https://youtu.be/TJ9WiTAVJgU",
+      "date": "2026-06-20",
+      "summary": "Disclosure : \"As an Amazon Affiliate Program I earn from qualifying purchases.\" . 1. Amazon: ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Top 5 Best Garden Tillers of 2026 | Garden Tillers Reviews",
+      "source": "YouTube / Reviews Key",
+      "url": "https://youtu.be/a0Z9Zlvh4HQ",
+      "date": "2026-06-19",
+      "summary": "This video reviewed the Top 5 Best Garden Tillers of 2026 | Garden Tillers Reviews ✓ Here is the List of Best Garden Tillers You ..."
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Zombie boxes",
+      "source": "Reddit / r/generator",
+      "url": "https://www.reddit.com/r/Generator/comments/1uffgdu/zombie_boxes/",
+      "date": "2026-06-25",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Really need help picking out an inverter generator.",
+      "source": "Reddit / r/generator",
+      "url": "https://www.reddit.com/r/Generator/comments/1ufp832/really_need_help_picking_out_an_inverter_generator/",
+      "date": "2026-06-25",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Power station to transfer switch controlling sump.",
+      "source": "Reddit / r/generator",
+      "url": "https://www.reddit.com/r/Generator/comments/1ufi9yn/power_station_to_transfer_switch_controlling_sump/",
+      "date": "2026-06-25",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Need some help with predator 3500",
+      "source": "Reddit / r/generator",
+      "url": "https://www.reddit.com/r/Generator/comments/1ufrgm1/need_some_help_with_predator_3500/",
+      "date": "2026-06-26",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Pulsar PGD105TiSCO for $1,462.43 on short term price at Wally World!",
+      "source": "Reddit / r/generator",
+      "url": "https://www.reddit.com/r/Generator/comments/1ufn91l/pulsar_pgd105tisco_for_146243_on_short_term_price/",
+      "date": "2026-06-25",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Solar generators in the gray winter",
+      "source": "Reddit / r/preppers",
+      "url": "https://www.reddit.com/r/preppers/comments/1ufe2w1/solar_generators_in_the_gray_winter/",
+      "date": "2026-06-25",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Box for Car.",
+      "source": "Reddit / r/preppers",
+      "url": "https://www.reddit.com/r/preppers/comments/1ufblan/box_for_car/",
+      "date": "2026-06-25",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Diagnosis book?",
+      "source": "Reddit / r/preppers",
+      "url": "https://www.reddit.com/r/preppers/comments/1ufow5r/diagnosis_book/",
+      "date": "2026-06-25",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "If you jave to leave your home quickly, but can come back",
+      "source": "Reddit / r/preppers",
+      "url": "https://www.reddit.com/r/preppers/comments/1uf8u5g/if_you_jave_to_leave_your_home_quickly_but_can/",
+      "date": "2026-06-25",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Anybody have any experience with a can sealer/can seamer?",
+      "source": "Reddit / r/preppers",
+      "url": "https://www.reddit.com/r/preppers/comments/1uftdbl/anybody_have_any_experience_with_a_can_sealercan/",
+      "date": "2026-06-26",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "LawnMowerRacing",
+      "source": "Reddit 搜索: lawn mower recall",
+      "url": "https://www.reddit.com/r/LawnMowerRacing/",
+      "date": "2019-12-27",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Robotic, automatic, automated, and autonomous lawnmowers",
+      "source": "Reddit 搜索: lawn mower recall",
+      "url": "https://www.reddit.com/r/roboticLawnmowers/",
+      "date": "2014-08-15",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "LawnMowerHub",
+      "source": "Reddit 搜索: lawn mower recall",
+      "url": "https://www.reddit.com/r/LawnMowerHub/",
+      "date": "2025-06-29",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "Makita 18Vx2 Brushless Lawn Mower 460mm Kit DLM464PT2 $539.10 (C&C/ in-Store) @ Sydney Tools/Bunnings",
+      "source": "Reddit 搜索: lawn mower recall",
+      "url": "https://www.reddit.com/r/OzBargainNew/comments/1ufww8v/makita_18vx2_brushless_lawn_mower_460mm_kit/",
+      "date": "2026-06-26",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "First the man takes a drink",
+      "source": "Reddit 搜索: lawn mower recall",
+      "url": "https://www.reddit.com/r/Dreading/comments/1ufwomd/first_the_man_takes_a_drink/",
+      "date": "2026-06-26",
+      "summary": ""
+    },
+    {
+      "category": "用户评论风向",
+      "title": "（采集说明）以下子版块本次限流 / 无数据，已跳过：smallengines, robotlawnmowers, AutomowerOG, lawncare, landscaping, RVliving, Tractors",
+      "source": "脚本日志",
+      "url": "",
+      "date": "",
+      "summary": "Reddit 对数据中心 IP 限流属正常，可按需手动 Browser MCP 补抓"
+    }
+  ]
+}
